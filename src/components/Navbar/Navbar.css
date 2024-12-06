@@ -31,6 +31,7 @@
     transition: all .4s linear;
     width: 45px;
     height: 45px;
+    margin-right: 120px;
 }
 .navbar .center img:hover {
     transform: rotate(720deg);
@@ -71,10 +72,8 @@
     right: -20px;
     width: 22px;
     height: 22px;
-    border: 2px solid #ffcc00;
     border-radius: 50%;
-    color: #ffcc00;
-    display: flex;
+    display: flex;  
     align-items: center;
     justify-content: center;
     font-family: "Roboto", sans-serif;

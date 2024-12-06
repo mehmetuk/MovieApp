@@ -1,0 +1,74 @@
+
+.movie-card {
+    width: 200px;
+    height: 350px;
+    position: relative;
+    margin: 20px; /* Cardlar arası boşluk artırıldı */
+    box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.374);
+    cursor: pointer;
+    transform: scale(1);
+    transition: all .2s linear;
+    border-radius: 15px; /* Görsel ile aynı radius */
+    overflow: hidden; /* Kenarlardaki taşmaları gizler */
+}
+
+
+.movie-card:hover {
+    transform: scale(1.08);
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.6), 0px 0px 15px rgba(67, 153, 230, 0.7);
+    transition: all 0.3s ease-in-out;
+    background: linear-gradient(to top, rgba(67, 153, 230, 0.2), rgba(83, 186, 155, 0.2));
+    overflow: hidden; /* Hover sırasında da taşmaları engeller */
+}
+
+
+
+.movie-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.movie-card:hover img {
+    filter: brightness(1.2); /* Parlaklık artışı */
+}
+
+.movie-card .gradient {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    border-radius: 5px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0) 100%);
+}
+
+.movie-card .movie-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #ffffff;
+    z-index: 2;
+}
+.movie-card .movie-info .movie-rating {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 16px; /* Not için eski font büyüklüğü */
+    padding-right: 10px;
+    padding-bottom: 5px;
+}
+
+
+.movie-card .movie-rating svg {
+    margin-left: 5px;
+    color: #ffae00;
+    font-size: 16px; /* Yıldız boyutu eski haline döndürüldü */
+}
